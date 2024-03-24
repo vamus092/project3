@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Project3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
-<body>
+<body theme="black">
     
     <div class="main w-full">
-<div class="home w-full h-screen">
-<div class="vdodiv w-full h-screen absolute top-0 left-0 bg-black"></div>
+<div class="home w-full h-screen relative">
+<div class="hidden vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden">
+    <video autoplay muted loop class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/1ENIoa5sjq.mp4"></video>
+</div>
 <div class="marqueescontainer w-full h-screen relative"></div>
-<div class="absolute top-1/2 left-1/2 w-[90%] h-96 bg-red-500"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]  bg-red-500">
+
+
+</div>
 </div>
     </div>
     <script src="script.js"></script>

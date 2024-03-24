@@ -1,0 +1,11 @@
+body[theme="black"]{
+    background-color: black;
+}body[theme="cyan"]{
+    background-color: rgba(0, 179, 255, 0.625);
+}
+body[theme="salmon"]{
+    background-color: salmon;
+}
+body[theme="white"]{
+    background-color: rgb(255, 255, 255);
+}
