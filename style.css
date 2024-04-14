@@ -1,11 +1,28 @@
-body[theme="black"]{
-    background-color: black;
-}body[theme="cyan"]{
+body[theme="black"] 
+{ background-color: black;
+}
+body[theme="black"] .section
+{color: rgb(255, 255, 255);}
+
+body[theme="cyan"]{
     background-color: rgba(0, 179, 255, 0.625);
 }
+
+body[theme="cyan"] .section{
+    color: rgba(29, 62, 76, 0.625);
+}
+
 body[theme="salmon"]{
     background-color: salmon;
 }
+body[theme="salmon"] .section{
+    color: rgb(88, 43, 37);
+}
+
 body[theme="white"]{
     background-color: rgb(255, 255, 255);
+}
+
+body[theme="white"].section{
+    color: rgb(62, 55,rgb(0, 0, 0)
 }
