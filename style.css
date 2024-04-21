@@ -1,4 +1,6 @@
-
+*::selection{
+    background-color: rgb(232, 142, 132);
+}
 body[theme="black"] 
 { background-color: black;
 }
