@@ -1,18 +1,13 @@
 *::selection{
     background-color:#ef9d71;
 }
-body[theme="black"] 
-{ background-color: black;
-}
-body[theme="black"] .section
-{color: rgb(255, 255, 255);}
+body[theme="black"] { background-color: black;}
+body[theme="black"] .section{color: rgb(255, 255, 255);}
 
-body[theme="cyan"]{
-    background-color: rgba(0, 179, 255, 0.625);
-}
+body[theme="cyan"]{  background-color: rgba(0, 179, 255, 0.625);}
 
 body[theme="cyan"] .section{
-    color: rgba(29, 62, 76, 0.625);
+    color: rgba(46, 131, 168, 0.625);
 }
 
 body[theme="salmon"]{
