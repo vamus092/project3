@@ -2,9 +2,9 @@
     --salmon: #ef9d71;
     --black:#000;
     --white:#fff;
-    --cyan: #00b3ff9f;
+    --cyan: #aedee0;
     --dsalmon:#582b25;
-    --dcyan:#2e83a89f;
+    --dcyan:#0000009f;
 
 }
 *::selection{
@@ -16,7 +16,7 @@ body[theme="black"] .section{color:var(--white)}
 
 
 body[theme="cyan"]{  background-color: var(--cyan);}
-body[theme="cyan"] .section{color:var(--dcyan);}
+body[theme="cyan"] .section{color:var(--black);}
 
 body[theme="salmon"]{
     background-color: var(--salmon);}
