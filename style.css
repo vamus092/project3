@@ -1,6 +1,8 @@
 *::selection{
     background-color:#ef9d71;
+    font-family: ;
 }
+
 body[theme="black"] { background-color: black;}
 body[theme="black"] .section{color: rgb(255, 255, 255);}
 
