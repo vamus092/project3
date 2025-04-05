@@ -1,16 +1,18 @@
 @font-face{
     font-family: "Pp Neue Machina" ;
     src: url(fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf) format(truetype), format(woff);
+    font-weight: medium;
 }
 @font-face{
     font-family: "Satoshi Variable" ;
     src: url(fonts/Satoshi-Variable.ttf) format(truetype);
 }
 @font-face{
-    font-family: "Pp Neue Machina" ;
-    src: url(fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf) format(truetype);
-}
+    font-family: "Pp Neue Machina l" ;
+    src: url(fonts/PPNeueMachina_\ Light.ttf) format(truetype);
+    font-weight: light;
 
+}
 :root{
     --salmon: #ef9d71;
     --black:#000;
