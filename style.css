@@ -1,5 +1,13 @@
 @font-face{
-    font-family: Pp Neue Machina ;
+    font-family: "Pp Neue Machina" ;
+    src: url(fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf) format(truetype), format(woff);
+}
+@font-face{
+    font-family: "Satoshi Variable" ;
+    src: url(fonts/Satoshi-Variable.ttf) format(truetype);
+}
+@font-face{
+    font-family: "Pp Neue Machina" ;
     src: url(fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf) format(truetype);
 }
 
