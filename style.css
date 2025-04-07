@@ -36,7 +36,7 @@ body[theme="cyan"] .section{color:var(--black);}
 body[theme="salmon"]{
     background-color: var(--salmon);}
 body[theme="salmon"] .section{color:var(--dsalmon);}
-/* body[them="salmon"].number{color:var(--white);} */
+/* body[them="salmon"] .section.section1{color:var(--white);} */
 
 body[theme="white"]{
     background-color: var(--white);
