@@ -73,6 +73,7 @@ function teamanimate(){
     })
 })
 }
+
 function para(){
     
 var clutter="";
@@ -107,7 +108,6 @@ function loco(){
     })();
 }
 
-function foot(){
     function capsule(){
         gsap.to(".capsule",{
             scrollTrigger:{
@@ -121,7 +121,6 @@ function foot(){
         })
     
     }
-}
 
 function theme(){
     document.querySelectorAll(".section")
@@ -148,4 +147,3 @@ teamanimate();
 para();
 loco();
 capsule();
-foot();
