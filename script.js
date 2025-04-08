@@ -72,9 +72,80 @@ function teamanimate(){
     })
 })
 }
+function para(){
+    
+var clutter="";
+document.querySelector(".textpara")
+.textContent.split("")
+.forEach(function(e){
+    if(e === " ") clutter+=  `<span> &nbsp;</span>`
+clutter+= `<span> ${e}</span>`
+})
+
+document.querySelector(".textpara").innerHTML=clutter;
+
+gsap.set(".textpara span", {opacity:.1})
+
+    gsap.to(".textpara span",{
+        scrollTrigger:{
+            trigger:".parag",
+            start:" top 50%",
+            end:"bottom 90%",
+            scrub:1,
+        },
+        opacity:1,
+        stagger:.03,
+        ease:Power4
+    })
+
+}
+
+function loco(){
+    (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+}
+
+function foot(){
+    function capsule(){
+        gsap.to(".capsule",{
+            scrollTrigger:{
+                trigger:".capsules",
+                start:"top 70%",
+                end: "bottom bottom",
+                scrub:1
+            },
+            y:0,
+            ease: Power4
+        })
+    
+    }
+}
+
+function theme(){
+    document.querySelectorAll(".section")
+        .forEach(function(e){
+            ScrollTrigger.create({
+                trigger:e,
+                start: "top 50%",
+                end:"bottom 50%",
+                markers:true,
+                onEnter: function(){
+                    document.body.setAttribute("theme",e.dataset.color);
+                },
+                onEnterBack:function(){
+                    document.body.setAttribute("theme",e.dataset.color);
+                }
+            })
+        })
+}
 
 
-
+theme();
 homepageAnimation();
 realhscroll();
 teamanimate();
+para();
+loco();
+capsule();
+foot();
