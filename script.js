@@ -37,16 +37,16 @@ ease:  Power2,
 
 function realhscroll(){
     gsap.to(".slide",{
-        transform: "translateX(-240%)",
+        // transform: "translateX(-240%)",
         scrollTrigger:{
             trigger:".real",
             start: "top 0",
-            end:"top -100%",
+            end:"bottom -100%",
             scrub:2,
             markers:true,
             pin:true
         },
-        xPercent:-240,
+        xPercent:-310,
         ease:Power4
     })
 }
