@@ -35,18 +35,46 @@ ease:  Power2,
 } ,'b' )
 }
 
-gsap.to(".slide",{
+function realhscroll(){
+    gsap.to(".slide",{
 
-    scrollTrigger:{
-        trigger:".real",
-        start: "top 0",
-        end:"top -100%",
-        markers:true,
-        scrub:2,
-        pin:true
-    },
-    xPercent:-200,
-    ease:Power4
+        scrollTrigger:{
+            trigger:".real",
+            start: "top 0",
+            end:"top -100%",
+            scrub:2,
+            pin:true
+        },
+        xPercent:-200,
+        ease:Power4
+    })
+}
+
+function teamanimate(){
+    document.querySelectorAll(".listelem")
+    .forEach(function(el){
+        el.addEventListener("mousemove",function(dets){
+            
+            gsap.to(this.querySelector(".pic"),{
+                opacity:1, 
+                x: gsap.utils.mapRange(0,window.innerWidth,-200, 200, dets.clientX),
+                ease:Power4, 
+                duration:.5
+            })
+        })
+        el.addEventListener("mouseleave",function(dets){
+            gsap.to(this.querySelector(".pic"),{
+                opacity:0, 
+                ease:Power4, 
+                duration:.5
+
+        })
+    })
 })
+}
+
+
 
 homepageAnimation();
+realhscroll();
+teamanimate();
